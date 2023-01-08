@@ -1,55 +1,135 @@
-git <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png" />
-
     <title>
       Frontend Mentor | Huddle landing page with alternating feature blocks
     </title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <link rel="stylesheet" href="./css/app.css" />
   </head>
   <body>
-    Try It Free Build The Community Your Fans Will Love Huddle re-imagines the
-    way we build communities. You have a voice, but so does your audience.
-    Create connections with your users as you engage in genuine discussion. Get
-    Started For Free Grow Together Generate meaningful discussions with your
-    audience and build a strong, loyal community. Think of the insightful
-    conversations you miss out on with a feedback form. Flowing Conversations
-    You wouldn't paginate a conversation in real life, so why do it online? Our
-    threads have just-in-time loading for a more natural flow. Your Users It
-    takes no time at all to integrate Huddle with your app's authentication
-    solution. This means, once signed in to your app, your users can start
-    chatting immediately. Ready To Build Your Community? Get Started For Free
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua +1-543-123-4567
-    example@huddle.com About Us What We Do FAQ Career Blog Contact Us &copy;
-    Copyright 2018 Huddle. All rights reserved.
-
-    <footer>
-      <p class="attribution">
+    <main class="wrapper">
+      <!-- Menu -->
+      <nav class="nav">
+        <img class="nav__logo" src="#" alt="Logo Huddle" />
+        <button class="nav__btn">Try It Free</button>
+      </nav>
+      <!-- Header -->
+      <header class="header">
+        <h1 class="header__title">Build The Community Your Fans Will Love</h1>
+        <p class="header__description">
+          Huddle re-imagines the way we build communities. You have a voice, but
+          so does your audience. Create connections with your users as you
+          engage in genuine discussion.
+        </p>
+        <button class="header__btn btn">Get Started For Free</button>
+        <img class="header__hero" src="#" alt="Hero image" />
+      </header> 
+      <!-- Section Together -->
+      <section class="card card__together">
+        <article class="card__img">
+          <img class="card__svg" src="#" alt="Grow Together" />
+        </article>
+        <article class="card__content">
+          <h2 class="card__title">Grow Together</h2>
+          <p class="card__description">
+            Generate meaningful discussions with your audience and build a
+            strong, loyal community. Think of the insightful conversations you
+            miss out on with a feedback form.
+          </p>
+        </article>
+      </section>
+      <!-- Section Conversations -->
+      <section class="card card__conversations">
+        <article class="card__img">
+          <img class="card__svg" src="#" alt="Flowing Conversations" />
+        </article>
+        <article class="card__content">
+          <h2 class="card__title">Flowing Conversations</h2>
+          <p class="card__description">
+            You wouldn't paginate a conversation in real life, so why do it
+            online? Our threads have just-in-time loading for a more natural
+            flow.
+          </p>
+        </article>
+      </section>
+      <!-- Section Users -->
+      <section class="card card__users">
+        <article class="card__img">
+          <img class="card__svg" src="#" alt="Your Users" />
+        </article>
+        <article class="card__content">
+          <h2 class="card__title">Your Users</h2>
+          <p class="card__description">
+            It takes no time at all to integrate Huddle with your app's
+            authentication solution. This means, once signed in to your app,
+            your users can start chatting immediately.
+          </p>
+        </article>
+      </section>
+      <!-- Section Community -->
+      <section class="card card__community">
+        <h2 class="card__title">Ready To Build Your Community?</h2>
+        <button class="card__btn btn">Get Started For Free</button>
+      </section>
+      <!-- Footer -->
+      <footer class="footer">
+        <img class="footer__logo" src="#" alt="Logo Huddle" />
+        <!-- Footer Address -->
+        <address class="footer__contact contact">
+          <div class="contact__location">
+            <img class="contact__icon" src="#" alt="Icon Location" />
+            <p class="contact__address">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua
+            </p>
+          </div>
+          <div class="contact__phone">
+            <img class="contact__icon" src="#" alt="Icon Phone" />
+            <a class="contact__number" href="#">+1-543-123-4567</a>
+          </div>
+          <div class="contact__email">
+            <img class="contact__icon" src="#" alt="Icon Email" />
+            <a class="contact__anchor" href="#">example@huddle.com</a>
+          </div>
+        </address>
+        <!-- Footer Nav -->
+        <nav class="footer__nav nav">
+          <ul class="nav__items">
+            <li class="nav__item"><a class="nav__a" href="#">About Us</a></li>
+            <li class="nav__item"><a class="nav__a" href="#">What We Do</a></li>
+            <li class="nav__item"><a class="nav__a" href="#">FAQ</a></li>
+            <li class="nav__item"><a class="nav__a" href="#">Career</a></li>
+            <li class="nav__item"><a class="nav__a" href="#">Blog</a></li>
+            <li class="nav__item"><a class="nav__a" href="#">Contact Us</a></li>
+          </ul>
+        </nav>
+        <!-- Footer Social -->
+        <div class="footer__social social">
+          <i class="social__icon fa-brands fa-facebook fa-xl"></i>
+          <i class="social__icon fa-brands fa-twitter fa-xl"></i>
+          <i class="social__icon fa-brands fa-instagram fa-xl"></i>
+        </div>
+        <p class="footer__copy">&copy; Copyright 2018 Huddle. All rights reserved.</p>
+      </footer>
+    </main>
+    <!-- Aside -->
+    <aside class="aside">
+      <p>
         Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener noreferrer"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
+        >. Coded by <a href="https://github.com/FreivysDev" target="_blank" rel="noopener noreferrer">FreivysDev/a>.
       </p>
-    </footer>
+    </aside>
+    <script
+      src="https://kit.fontawesome.com/e919be42a8.js"
+      crossorigin="anonymous"></script>
   </body>
 </html>
