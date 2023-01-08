@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+img {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center center; }
+
+a {
+  display: block;
+  text-decoration: none; }
+
+p a {
+  display: inline; }
+
+li {
+  list-style-type: none; }
+
+html {
+  scroll-behavior: smooth; }
+
+body {
+  min-height: 100vh;
+  font-size: 100%;
+  font-family: "Open Sans", sans-serif; }
+
+.aside {
+  font-size: 11px;
+  text-align: center; }
+  .aside a {
+    color: #3e52a3; }
